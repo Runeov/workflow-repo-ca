@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
-    "lint": "eslint js/**/*.js",
-    "lint:fix": "eslint js/**/*.js --fix",
-    "format": "prettier --write js/**/*.js *.html **/*.html",
+    "lint": "eslint \"js/**/*.js\"",
+    "lint:fix": "eslint \"js/**/*.js\" --fix",
+    "format": "prettier --write \"js/**/*.js\" \"*.html\" \"**/*.html\"",
     "prepare": "husky install",
     "test": "vitest run",
     "test:e2e": "playwright test"
