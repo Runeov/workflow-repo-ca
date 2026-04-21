@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
-  "scripts": {
+"scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
     "lint": "eslint js/**/*.js",
     "lint:fix": "eslint js/**/*.js --fix",
@@ -16,7 +15,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.2.1",
-    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.5.0",
     "prettier": "^3.8.3",
     "tailwindcss": "^3.4.12"
   }
