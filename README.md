@@ -43,6 +43,7 @@ Required variables:
 | `npm run lint`     | Lint all JavaScript in `js/` with ESLint                                  |
 | `npm run lint:fix` | Lint and auto-fix JavaScript issues                                       |
 | `npm run format`   | Format JavaScript and HTML files with Prettier                            |
+| `npm test`         | Run Vitest unit tests                                                     |
 | `npm run test:e2e` | Run Playwright end-to-end tests (starts the static server automatically)  |
 
 ## Pre-commit hooks
@@ -53,6 +54,19 @@ Husky and lint-staged are configured to run automatically on every commit:
 - `*.html` files are formatted with Prettier
 
 Commits are blocked if ESLint finds errors it cannot auto-fix.
+
+## Unit tests
+
+Unit tests live in `tests/` and are run with Vitest in a jsdom environment.
+
+- `tests/isActivePath.test.js` — tests for the active-path helper
+- `tests/getUsername.test.js` — tests for reading the stored username
+
+Run them with:
+
+```bash
+npm test
+```
 
 ## End-to-end tests
 
